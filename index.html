@@ -57,17 +57,14 @@
        <div id="map"></div>
         <script>
         var mymap = L.map('map').setView([39.527231, -40.991776], 2);
-          L.mapbox.accessToken = 'pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ';
-// Add tiles from the Mapbox Static Tiles API
-// (https://docs.mapbox.com/api/maps/#static-tiles)
-// Tiles are 512x512 pixels and are offset by 1 zoom level
-L.tileLayer(
-    'https://api.mapbox.com/styles/v1/lawsonv/ckw6my0mo1ciq15qvkf46956l.html?title=copy&access_token=pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ' + L.mapbox.accessToken, {
-        tileSize: 512,
-        zoomOffset: -1,
-        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-      
+         L.tileLayer('https://api.mapbox.com/styles/v1/lawsonv/ckw6my0mo1ciq15qvkf46956l.html?title=copy&access_token=pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ&zoomwheel=true&fresh=true#3.45/37.51/-115.94', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ'
+}).addTo(mymap);      
         </script>
         <!-- Footer-->
         <footer class="border-top">
