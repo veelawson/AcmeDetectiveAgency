@@ -63,8 +63,13 @@
     accessToken: 'pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ'
 }).addTo(map1); 
             
-        
-       
+ <!--Custom Marker--> 
+  var spyglass = L.icon({
+    iconUrl: 'assets/img/Spyglass.png',
+    iconSize:     [38, 38],
+    iconAnchor:   [22, 38], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
                  
             var dataset1 = [
   <!--1-->              
@@ -75,9 +80,9 @@
             coordinates: [-119.0977191, 46.2465524]
         },
         properties: {
-            title: 'Popup 1',
-            description: 'Hello World!',
-            time: '1992/01'
+            title: 'Sir Francis Walsingham ( c. 1532 - 6 April 1590)',
+            description: '<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/St_Katharine%27s_%5E_Wapping%2C_London%2C_UK_-_panoramio_%2824%29.jpg"> As Secretary of State under Queen Elizabeth I, Sir Francis Walsingham used an extensive network of informants to identify and round up conspirators against the queen, particularly Catholics, and was involved in the entrapment and execution of Mary Queen of Scots, who was imprisoned in the Tower of London.',
+            time: '1532'
         }
     },
       <!--2-->                        
