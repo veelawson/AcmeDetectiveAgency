@@ -64,12 +64,16 @@
 }).addTo(map1); 
             
  <!--Custom Marker--> 
-  var spyglass = L.icon({
-    iconUrl: 'assets/img/Spyglass.png',
-    iconSize:     [38, 38],
-    iconAnchor:   [22, 38], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
+.marker {
+  background-image: url('assets/img/Spyglass.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+            
+       
                  
             var dataset1 = [
   <!--1-->              
