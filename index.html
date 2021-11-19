@@ -53,7 +53,16 @@
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoibGF3c29udiIsImEiOiJja3c2bW11dzc4bmp4MnVudXFkMnhtN3Z2In0.Y_r_LnfZaKSbBT5O7kMqnQ'
 }).addTo(mymap); 
+            
+ <!-- Fake Markers! -->
  var marker = L.marker([51.5, -0.09]).addTo(mymap);
+            
+ var popup = L.popup()
+    .setLatLng([51.5, -0.09])
+    .setContent("I am a standalone popup.")
+    .openOn(mymap);
+            
+            
         </script>
         <!-- Footer-->
         <footer class="border-top">
