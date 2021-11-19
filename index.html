@@ -55,12 +55,8 @@
 }).addTo(mymap); 
             
  <!-- Fake Markers! -->
- var marker = L.marker([51.5, -0.09]).addTo(mymap);
-            
- var popup = L.popup()
-    .setLatLng([51.5, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(mymap);
+ var marker = L.marker([51.5, -0.09]).addTo(mymap).bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+ 
             
             
         </script>
