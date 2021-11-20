@@ -308,9 +308,7 @@ var optionsObject = {
 
 		
 // Create the first geoJSON layer
-            var group1 = L.geoJSON(dataset1, optionsObject{
-      pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {icon: smallIcon});
+            var group1 = L.geoJSON(dataset1, optionsObject);
       }
 
 // Create the second geoJSON layer from external file
