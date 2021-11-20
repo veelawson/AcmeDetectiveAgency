@@ -336,12 +336,12 @@ var optionsObject = {
             var group1 = L.geoJSON(dataset1, optionsObject);
 
 // Create the second geoJSON layer from external file
-            $.getJSON("data/dataset2.json", function(json) {
-                var group2 = L.geoJSON(json, optionsObject);
+            $.getJSON("data/dataset2.json", function(json1) {
+                var group2 = L.geoJSON(json1, optionsObject);
 		    
 // Create the third geoJSON layer from external file
-            $.getJSON("data/dataset3.json", function(json) {
-                var group3 = L.geoJSON(json, optionsObject);
+            $.getJSON("data/dataset3.json", function(json2) {
+                var group3 = L.geoJSON(json2, optionsObject);
 
  // Set the time attribute for each group
             group1.options.time = "1992";
