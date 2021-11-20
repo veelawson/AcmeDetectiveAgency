@@ -80,6 +80,24 @@
     iconAnchor:   [22, 38], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+ 
+            // replace Leaflet's default blue marker with a custom icon
+function createCustomIcon (feature, latlng) {
+  let myIcon = L.icon({
+    iconUrl: 'assets/img/Spyglass.png',
+    iconSize:     [25, 25], // width and height of the image in pixels
+    iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+  })
+  return L.marker(latlng, { icon: myIcon })
+}
+
+// create an options object that specifies which function will called on each feature
+let myLayerOptions = {
+  pointToLayer: createCustomIcon
+}
+            
+            
                  
 var dataset1 = [
   <!--1-->              
