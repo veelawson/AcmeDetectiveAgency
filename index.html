@@ -38,6 +38,14 @@
                 max-height:40%;
                   }
             
+		.marker {
+  background-image: url('assets/img/Spyglass.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
          
 	.mapboxgl-popup {
   max-width: 500px;
@@ -324,11 +332,11 @@ var optionsObject = {
 };
             
 // Create the first geoJSON layer
-            var group1 = L.geoJSON(dataset1, optionsObject, myLayerOptions);
+            var group1 = L.geoJSON(dataset1, optionsObject);
 
 // Create the second geoJSON layer from external file
             $.getJSON("data/dataset2.json", function(json) {
-                var group2 = L.geoJSON(json, optionsObject, myLayerOptions);
+                var group2 = L.geoJSON(json, optionsObject);
 
  // Set the time attribute for each group
             group1.options.time = "1992";
