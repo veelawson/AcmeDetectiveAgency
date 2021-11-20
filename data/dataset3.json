@@ -5,11 +5,11 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-36.553536301029645, 47.03886508690018]
+                "coordinates": [-39.99149589325565, 41.13385290204307, ]
             },
             "properties": {
-                "title": "Layer 2",
-                "description": "Test",
+                "title": "Layer 3",
+                "description": "Test Layer 3",
                 "time": "1994"
             }
         }
