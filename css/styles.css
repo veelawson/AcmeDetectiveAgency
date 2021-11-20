@@ -6146,14 +6146,14 @@ textarea.form-control-lg {
   color: #0085A1;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #006a81;
+  color: #9e081c;
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: #9e081c;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64;
+  color: #9e081c;
 }
 
 .link-success {
