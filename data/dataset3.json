@@ -1,0 +1,17 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-36.553536301029645, 47.03886508690018]
+            },
+            "properties": {
+                "title": "Layer 2",
+                "description": "Test",
+                "time": "1994"
+            }
+        }
+    ]
+}
