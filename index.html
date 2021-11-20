@@ -338,13 +338,19 @@ var optionsObject = {
 // Create the second geoJSON layer from external file
             $.getJSON("data/dataset2.json", function(json) {
                 var group2 = L.geoJSON(json, optionsObject);
+		    
+// Create the third geoJSON layer from external file
+            $.getJSON("data/dataset3.json", function(json) {
+                var group3 = L.geoJSON(json, optionsObject);
 
  // Set the time attribute for each group
             group1.options.time = "1992";
             group2.options.time = "1993";
+	    group3.options.time = "1994";
+
 
 // Create the layerGroup
-            var multiLayers = L.layerGroup([group1, group2]);
+            var multiLayers = L.layerGroup([group1, group2, group3]);
 
 // Set the sliderControl options
             var sliderControl1 = L.control.sliderControl( {
