@@ -322,6 +322,25 @@ var dataset1 = [
     }
 ];
 
+
+		
+var dataset3 = [
+  <!--1-->              
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            "coordinates": [-36.553536301029645, 47.03886508690018]
+        },
+        properties: {
+            title: 'Layer3',
+            description: '<img class="resize" src="https://upload.wikimedia.org/wikipedia/commons/3/38/St_Katharine%27s_%5E_Wapping%2C_London%2C_UK_-_panoramio_%2824%29.jpg"> <br> As Secretary of State under Queen Elizabeth I, Sir Francis Walsingham used an extensive network of informants to identify and round up conspirators against the queen, particularly Catholics, and was involved in the entrapment and execution of Mary Queen of Scots, who was imprisoned in the Tower of London.',
+            time: '1994'
+        }
+    }		
+];		
+		
+		
 var optionsObject = {
     onEachFeature: onEachFeature
 };
@@ -336,12 +355,11 @@ var optionsObject = {
             var group1 = L.geoJSON(dataset1, optionsObject);
 
 // Create the second geoJSON layer from external file
-            $.getJSON("data/dataset2.json", function(json1) {
-                var group2 = L.geoJSON(json1, optionsObject);
-		    
-// Create the third geoJSON layer from external file
-            $.getJSON("data/dataset3.json", function(json2) {
-                var group3 = L.geoJSON(json2, optionsObject);
+            $.getJSON("data/dataset2.json", function(json) {
+                var group2 = L.geoJSON(json, optionsObject);
+
+// Create the first geoJSON layer
+            var group3 = L.geoJSON(dataset3, optionsObject);
 
  // Set the time attribute for each group
             group1.options.time = "1992";
