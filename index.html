@@ -298,11 +298,10 @@ var dataset4 = [
 <!-- Juan Carlos end-->
 		
 var optionsObject = {
-    onEachFeature: onEachFeature, {
+    onEachFeature: onEachFeature, 
       pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {icon: smallIcon});
       }
-	}
 };
 		
    function onEachFeature (feature, layer) {
